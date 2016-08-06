@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--stylesheet-->
+      <link rel="stylesheet" type="text/css" href="css/splash.css">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script type="text/javascript" src="js/splash.js"></script>
+      <!--background image-->
+      <div id="splash_background">
+        <img src="img/splash_background.jpg" alt="splash_background.jpg" />
+      </div>
+
+      <!--page content-->
+      <div class="container">
+        <div class="valign-wrapper" id="content">
+          <div class="container">
+            <div class="section">
+              <div class="cs s12 center-align">
+                <span class="flow-text" id="title">
+                  <h1>Data Science</h1>
+                  <div class="divider"></div>
+                  USC Data Science Consulting Group
+                </span>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row" id="buttons">
+                <div class="col s6 center-align">
+                  <a class="waves-effect waves-yellow btn-large black-text grey lighten-2 flow-text choices" id="choiceOne" onclick="showContent('join');">Can I get Involed?</a>
+                </div>
+                <div class="col s6 center-align">
+                  <a class="waves-effect waves-red btn-large black-text grey lighten-2 flow-text choices" id="choiceTwo" onclick="showContent('aboutUs');">You do ... <strong>WHAT</strong> ??</a>
+                </div>
+              </div>
+            </div>
+            <div class="section">
+              <div class="row">
+                <div class="col s2">
+                </div>
+                  <div class="col s8" id="card">
+                    <!--content dynamically loaded via jquery-->
+                  </div>
+                <div class="col s2">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </body>
+  </html>
