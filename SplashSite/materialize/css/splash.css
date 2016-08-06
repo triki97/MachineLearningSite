@@ -24,14 +24,21 @@
     #splash_background img {
       width:100%;
       height:auto;
-  }
+    }
+}
+@media screen and (max-device-width: 450px) {
+
 }
 
 #content {
-  height:700px
+  height:800px
 }
-#choices {
+.choices {
   opacity: 0.85;
+  font-size: 100%;
+}
+.email {
+  font-size: 70%;
 }
 #description {
   opacity: 0.85;
