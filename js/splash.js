@@ -1,10 +1,10 @@
 function showContent(boxid){
-  if (boxid=="join"){
-    $('#card').load("join.html");
+  if (boxid=="custom"){
+    $('#card').load("custom.html");
     Materialize.fadeInImage('#card');
   }
-  else if (boxid=="aboutUs"){
-    $('#card').load("aboutUs.html");
+  else if (boxid=="simple"){
+    $('#card').load("simple.html");
     Materialize.fadeInImage('#card');
   }
 };
