@@ -7,6 +7,10 @@ function showContent(boxid){
     $('#card').load("simple.html");
     Materialize.fadeInImage('#card');
   }
+  else if (boxid=="trustworthy"){
+    $('#card').load("trustworthy.html");
+    Materialize.fadeInImage('#card');
+  }
 };
 
 function mobileViewUpdate() {
