@@ -1,17 +1,35 @@
 function showContent(boxid){
   if (boxid=="custom"){
     $('#card').load("custom.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('indigo lighten-3');
+    $('#choiceTwo').addClass('grey lighten-2');
+    $('#choiceThree').addClass('grey lighten-2');
     Materialize.fadeInImage('#card');
   }
   else if (boxid=="simple"){
     $('#card').load("simple.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('grey lighten-2');
+    $('#choiceTwo').addClass('indigo lighten-3');
+    $('#choiceThree').addClass('grey lighten-2');
     Materialize.fadeInImage('#card');
   }
   else if (boxid=="dependable"){
     $('#card').load("dependable.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('grey lighten-2');
+    $('#choiceTwo').addClass('grey lighten-2');
+    $('#choiceThree').addClass('indigo lighten-3');
     Materialize.fadeInImage('#card');
   }
 };
+
+function removeButtonColoring() {
+  $('#choiceOne').removeClass('grey lighten-2');
+  $('#choiceTwo').removeClass('grey lighten-2');
+  $('#choiceThree').removeClass('grey lighten-2');
+}
 
 function mobileViewUpdate() {
     var viewportWidth = $(window).width();
