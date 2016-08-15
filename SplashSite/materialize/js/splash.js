@@ -1,13 +1,35 @@
 function showContent(boxid){
-  if (boxid=="join"){
-    $('#card').load("join.html");
+  if (boxid=="custom"){
+    $('#card').load("custom.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('indigo lighten-3');
+    $('#choiceTwo').addClass('grey lighten-2');
+    $('#choiceThree').addClass('grey lighten-2');
     Materialize.fadeInImage('#card');
   }
-  else if (boxid=="aboutUs"){
-    $('#card').load("aboutUs.html");
+  else if (boxid=="simple"){
+    $('#card').load("simple.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('grey lighten-2');
+    $('#choiceTwo').addClass('indigo lighten-3');
+    $('#choiceThree').addClass('grey lighten-2');
+    Materialize.fadeInImage('#card');
+  }
+  else if (boxid=="dependable"){
+    $('#card').load("dependable.html");
+    removeButtonColoring();
+    $('#choiceOne').addClass('grey lighten-2');
+    $('#choiceTwo').addClass('grey lighten-2');
+    $('#choiceThree').addClass('indigo lighten-3');
     Materialize.fadeInImage('#card');
   }
 };
+
+function removeButtonColoring() {
+  $('#choiceOne').removeClass('grey lighten-2');
+  $('#choiceTwo').removeClass('grey lighten-2');
+  $('#choiceThree').removeClass('grey lighten-2');
+}
 
 function mobileViewUpdate() {
     var viewportWidth = $(window).width();
@@ -15,16 +37,19 @@ function mobileViewUpdate() {
       $("#buttons").removeClass("row");
       $("#choiceOne").addClass("container #description1");
       $("#choiceTwo").addClass("container #description2");
+      $("#choiceThree").addClass("container #description3");
     }
     else if (viewportWidth < 830 && viewportWidth > 450) {
       $("#buttons").removeClass("row");
       $("#choiceOne").addClass("container #description1");
       $("#choiceTwo").addClass("container #description2");
+      $("#choiceThree").addClass("container #description3");
     }
     else {
       $("#buttons").addClass("row");
       $("#choiceOne").removeClass("container #description1");
       $("#choiceTwo").removeClass("container #description2");
+      $("#choiceThree").removeClass("container #description3");
     }
 }
 
