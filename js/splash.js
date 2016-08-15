@@ -7,8 +7,8 @@ function showContent(boxid){
     $('#card').load("simple.html");
     Materialize.fadeInImage('#card');
   }
-  else if (boxid=="trustworthy"){
-    $('#card').load("trustworthy.html");
+  else if (boxid=="dependable"){
+    $('#card').load("dependable.html");
     Materialize.fadeInImage('#card');
   }
 };
@@ -19,16 +19,19 @@ function mobileViewUpdate() {
       $("#buttons").removeClass("row");
       $("#choiceOne").addClass("container #description1");
       $("#choiceTwo").addClass("container #description2");
+      $("#choiceThree").addClass("container #description3");
     }
     else if (viewportWidth < 830 && viewportWidth > 450) {
       $("#buttons").removeClass("row");
       $("#choiceOne").addClass("container #description1");
       $("#choiceTwo").addClass("container #description2");
+      $("#choiceThree").addClass("container #description3");
     }
     else {
       $("#buttons").addClass("row");
       $("#choiceOne").removeClass("container #description1");
       $("#choiceTwo").removeClass("container #description2");
+      $("#choiceThree").removeClass("container #description3");
     }
 }
 

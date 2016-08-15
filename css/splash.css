@@ -55,3 +55,6 @@ canvas {
 #description {
   opacity: 0.85;
 }
+#choiceOne, #choiceTwo, #choiceThree {
+  width: 100%;
+}
